@@ -1,0 +1,9 @@
+routers:
+  - name: "Router1"
+    ip: "192.168.1.1"
+    username: "root"
+    password: "password"
+  - name: "Router2"
+    ip: "192.168.2.1"
+    username: "root"
+    password: "password"
