@@ -1,0 +1,32 @@
+{
+  "name": "OpenWRT Router Control",
+  "version": "1.0.0",
+  "slug": "openwrt_control",
+  "description": "Control multiple OpenWRT routers from Home Assistant",
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "routers": [
+      {
+        "name": "Router1",
+        "ip": "192.168.1.1",
+        "username": "root",
+        "password": "password"
+      }
+    ]
+  },
+  "schema": {
+    "routers": [
+      {
+        "name": "str",
+        "ip": "str",
+        "username": "str",
+        "password": "str"
+      }
+    ]
+  },
+  "ports": {
+    "8000/tcp": 8000
+  },
+  "image": "local/openwrt_control"
+}
